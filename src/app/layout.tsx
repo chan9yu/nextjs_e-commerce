@@ -22,7 +22,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: ChildrenProps) {
 	return (
 		<html lang="ko">
-			<body className={openSans.className}>{children}</body>
+			<body className={openSans.className}>
+				<main>{children}</main>
+			</body>
 		</html>
 	);
 }
